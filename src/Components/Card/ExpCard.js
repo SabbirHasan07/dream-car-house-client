@@ -10,7 +10,7 @@ const ExpCard = () => {
     <div className='flex flex-wrap gap-6'>
       <div className='lg:w-1/4 md:w-1/2 p-4 w-full'>
         <Link
-          to='/sekectCategories/Like New'
+          
           className='block relative h-32 rounded overflow-hidden'
         >
           <img
@@ -23,7 +23,7 @@ const ExpCard = () => {
         <div className='mt-4'>
 
           <h2 className='text-gray-900 title-font text-lg font-medium'>
-            Brand New Cars
+            Like New Cars
 
           </h2>
           <h3 className='text-gray-500 text-xs tracking-widest title-font mb-1 mt-3'>
@@ -34,7 +34,7 @@ const ExpCard = () => {
           </h3>
 
           <div className='mt-6'>
-            <Link to='/sekectCategories/Brand New'><PrimaryButton><span className='px-32'>Select</span></PrimaryButton></Link>
+            <Link to='/sekectCategories/Like New'><PrimaryButton><span className='px-32'>Select</span></PrimaryButton></Link>
 
 
 
@@ -43,7 +43,7 @@ const ExpCard = () => {
       </div>
       <div className='lg:w-1/4 md:w-1/2 p-4 w-full'>
         <Link
-          to='/sekectCategorie/ModifiedCar'
+         
           className='block relative h-32 rounded overflow-hidden'
         >
           <img
@@ -74,7 +74,7 @@ const ExpCard = () => {
       </div>
       <div className='lg:w-1/4 md:w-1/2 p-4 w-full'>
         <Link
-          to='/sekectCategories/Recondition Car'
+       
           className='block relative h-32 rounded overflow-hidden'
         >
           <img
