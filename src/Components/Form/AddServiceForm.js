@@ -61,7 +61,7 @@ const AddServiceForm = ({
             <div className='space-y-1 text-sm'>
                 <label htmlFor='guest' className='block text-gray-600'>
                   Condition <br /> <span className='text-red-600'>(*You must write (only one of three)  like them *  )</span><br />
-                  <span className='text-xs font-bold m-2'>Brand New</span><br />
+                  <span className='text-xs font-bold m-2'>Like New</span><br />
                   <span className='text-xs font-bold m-2'>Reconditions</span><br />
                   <span className='text-xs font-bold m-2'>Modified</span>
                 </label>
