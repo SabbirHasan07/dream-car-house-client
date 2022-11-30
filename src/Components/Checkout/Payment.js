@@ -18,7 +18,7 @@ const Payment = ({ handleBooking }) => {
         className='py-2 px-4 rounded-md hover:text-gray-100 bg-gradient-to-r from-emerald-500 to-lime-500 text-white'
         onClick={handleBooking}
       >
-        Pay
+        
       </button>
 
     </>
