@@ -28,10 +28,7 @@ const Sidebar = ({ role, loading }) => {
           </div>
         </div>
 
-        <button
-          onClick={handleToggle}
-          className='mobile-menu-button p-4 focus:outline-none focus:bg-gray-700'
-        >
+      
           <Bars3Icon className='h-5 w-5' />
         </button>
       </div>
