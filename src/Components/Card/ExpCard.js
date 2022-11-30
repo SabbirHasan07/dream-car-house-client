@@ -26,12 +26,7 @@ const ExpCard = () => {
             Brand New Cars
 
           </h2>
-          <h3 className='text-gray-500 text-xs tracking-widest title-font mb-1 mt-3'>
-            This is the wellknown car website. Here you found best and trusted products.
-
-
-
-          </h3>
+         
 
           <div className='mt-6'>
             <Link to='/sekectCategories/Brand New'><PrimaryButton><span className='px-32'>Select</span></PrimaryButton></Link>
