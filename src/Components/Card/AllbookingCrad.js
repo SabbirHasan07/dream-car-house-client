@@ -7,18 +7,7 @@ const AllbookingCrad = ({bk}) => {
   
    
 
-    const handleDelete = (id) => {
-      console.log(id);
-      fetch(`http://localhost:8000/book/${id}`, {
-          method: 'DELETE'
-      })
-          .then(res => res.json())
-          .then(data => {
-              const productData = data.data.booking
-             console.log(productData)
-              
-          })
-  }
+
     return (
         <div>
              <div className='py-8'>
@@ -93,7 +82,7 @@ const AllbookingCrad = ({bk}) => {
                     <p className='text-gray-900 whitespace-no-wrap'>{book?.date}</p>
                   </td>
                   <td className='px-5 py-5 border-b border-gray-200 bg-white text-sm'>
-                    <button onClick={()=>handleDelete(book._pid)} className='btn'>Delete</button>
+                    <button className='btn'>Delete</button>
                   </td>
                 </tr>
               </tbody>
