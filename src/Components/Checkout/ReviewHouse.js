@@ -28,10 +28,7 @@ const ReviewHouse = ({ setSelectedIndex }) => {
             </p>
           </div>
         </div>
-        <div class='flex flex-col items-center  my-2 mx-auto max-w-7xl sm:flex-row'>
-          <div class='inline-flex p-2 border items-center justify-center flex-shrink-0 mt-1 text-neutral-600 bg-gray-50 sm:mr-3'>
-            <FaceSmileIcon className=' w-5 h-5' />
-          </div>
+       
           <div class='flex-grow prose sm:text-left prose-md'>
             <p className='text-gray-800 text-medium'>5 years service warrenty</p>
           </div>
