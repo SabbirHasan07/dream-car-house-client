@@ -9,7 +9,8 @@ const WhosComing = ({
   console.log(host)
   return (
     <>
-      
+      <h1 className='text-2xl font-bold mb-12'>Review</h1>
+      <div className='flex gap-10 flex-wrap-justify-between'>
         
         <div className='flex flex-col items-center justify-center'>
           <img
