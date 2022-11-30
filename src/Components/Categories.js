@@ -10,7 +10,7 @@ const Categories = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:8000/allproduct/Brand%20New`)
+        fetch(`http://localhost:8000/allproduct/Like%20New`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id]);

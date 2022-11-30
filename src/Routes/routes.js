@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         element: <SearchResult />,
       },
       {
-        path: '/sekectCategories/Brand New',
+        path: '/sekectCategories/Like New',
         element: <Categories/>,
       },
       {
