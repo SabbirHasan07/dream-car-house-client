@@ -10,7 +10,7 @@ const ExpCard = () => {
     <div className='flex flex-wrap gap-6'>
       <div className='lg:w-1/4 md:w-1/2 p-4 w-full'>
         <Link
-          to='/sekectCategories/Brand New'
+          to='/sekectCategories/Like New'
           className='block relative h-32 rounded overflow-hidden'
         >
           <img
