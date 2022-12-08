@@ -23,14 +23,15 @@ const Details = () => {
   const { data: product = [] } = useQuery({
     queryKey: ['allproduc',id],
     queryFn: async () => {
-        const res = await fetch(`http://localhost:8000/allproducts/${id}`);
+        const res = await fetch(`https://server-nine-mocha.vercel.app/allproducts/${id}`);
         const data = await res.json();
         return data
     }
 });
+console.log(product)
 
   // useEffect(() => {
-  //   fetch(`http://localhost:8000/allproducts/${id}`)
+  //   fetch(`https://server-nine-mocha.vercel.app//allproducts/${id}`)
   //     .then(res => res.json())
   //     .then(data => setProduct(data))
   // }, [id]);
@@ -143,17 +144,17 @@ const Details = () => {
           <hr />
           <div className='mt-4 text-gray-500'>
           {
-                  product?.host?.email?(<>
+                  product?.hostemail?(<>
                   <p className='bg-gray-600 text-white w-16 px-16'>Verified</p>
                   </>):(<></>)
                 }
-          <img className='w-72 mt-2 ' src={product?.host?.image} alt="" />
+          <img className='w-72 mt-2 ' src={product?.hostimage} alt="" />
             <p className='font-bold mt-2'>
-              Name: {product?.host?.name}
+              Name: {product?.hostname}
             </p>
             
             <p className='mt-2 font-bold'>
-              Email: {product?.host?.email}
+              Email: {product?.hostemail}
             </p>
           </div>
           <br />

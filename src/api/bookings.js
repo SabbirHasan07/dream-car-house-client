@@ -1,6 +1,6 @@
 // Save a booking
 export const saveBooking = async bookingData => {
-  const url = `${process.env.REACT_APP_API_URL}/bookings`
+  const url = `https://server-nine-mocha.vercel.app/bookings`
 
   const response = await fetch(url, {
     method: 'POST',
@@ -17,7 +17,7 @@ export const saveBooking = async bookingData => {
 
 // Get All Bookings for user
 export const getAllBookingsByEmail = async email => {
-  const url = `${process.env.REACT_APP_API_URL}/booking/${email}`
+  const url = `https://server-nine-mocha.vercel.app/booking/${email}`
 
   const response = await fetch(url)
 
@@ -28,7 +28,7 @@ export const getAllBookingsByEmail = async email => {
 
 // Get All Bookings for Admin
 export const getAllBookings = async () => {
-  const url = 'http://localhost:8000/bookings/bookings'
+  const url = 'https://server-nine-mocha.vercel.app//bookings/bookings'
 
   const response = await fetch(url)
 

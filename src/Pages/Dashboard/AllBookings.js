@@ -5,7 +5,7 @@ const AllBookings = () => {
 
   const [bookings, setBookings] = useState([])
 useEffect(() => {
-    fetch(`http://localhost:8000/booking`)
+    fetch(`https://server-nine-mocha.vercel.app/booking`)
       .then(res => res.json())
       .then(data => setBookings(data));
   }, []);

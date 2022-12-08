@@ -4,7 +4,7 @@ export const setAuthToken = user => {
   }
 
   //   Save user in db & get token
-  fetch(`${process.env.REACT_APP_API_URL}/user/${user?.email}`, {
+  fetch(`https://server-nine-mocha.vercel.app/user/${user?.email}`, {
     method: 'PUT',
     headers: {
       'content-type': 'application/json',
@@ -18,3 +18,4 @@ export const setAuthToken = user => {
       localStorage.setItem('aircnc-token', data.token)
     })
 }
+//https://server-nine-mocha.vercel.app

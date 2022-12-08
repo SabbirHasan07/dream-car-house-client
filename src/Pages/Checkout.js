@@ -15,7 +15,7 @@ const Checkout = () => {
   
   const { id } = useParams();
   useEffect(() => {
-    fetch(`http://localhost:8000/allproducts/${id}`)
+    fetch(`https://server-nine-mocha.vercel.app/allproducts/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data))
   }, [id]);

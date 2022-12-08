@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDuMtG5Ajw92BxhCz7eg8mM_03W_hChb-4",
-  authDomain: "aircnc-39233.firebaseapp.com",
-  projectId: "aircnc-39233",
-  storageBucket: "aircnc-39233.appspot.com",
-  messagingSenderId: "260369176329",
-  appId: "1:260369176329:web:cedc8662801a0f376165d8"
+  apiKey: "AIzaSyCFD6VNxn7r1iYXfo93wW68ULflszfOJXA",
+  authDomain: "dream-car-house.firebaseapp.com",
+  projectId: "dream-car-house",
+  storageBucket: "dream-car-house.appspot.com",
+  messagingSenderId: "3772308911",
+  appId: "1:3772308911:web:d77fbbd1c23366b483e35a"
 };
 
 // Initialize Firebase

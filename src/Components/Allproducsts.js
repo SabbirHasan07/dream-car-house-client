@@ -12,7 +12,7 @@ const Allproducsts = () => {
     const { data: product = [] } = useQuery({
         queryKey: ['allproduc'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:8000/allproduc`);
+            const res = await fetch(`https://server-nine-mocha.vercel.app//allproduc`);
             const data = await res.json();
             return data
         }
@@ -20,7 +20,7 @@ const Allproducsts = () => {
 
 
     // useEffect(() => {
-    //     fetch(`http://localhost:8000/allproduc`)
+    //     fetch(`https://server-nine-mocha.vercel.app//allproduc`)
     //         .then(res => res.json())
     //         .then(data => setProduct(data))
     // }, []);

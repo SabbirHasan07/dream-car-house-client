@@ -10,7 +10,7 @@ const CategoriesCustom = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:8000/allproduct/Modified`)
+        fetch(`https://server-nine-mocha.vercel.app/allproduct/Modified`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id]);

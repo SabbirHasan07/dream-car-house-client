@@ -1,5 +1,5 @@
 export const getAllHomes = async email => {
-    const url = `${process.env.REACT_APP_API_URL}/allproduc`
+    const url = `https://server-nine-mocha.vercel.app/allproduc`
   
     const response = await fetch(url)
   

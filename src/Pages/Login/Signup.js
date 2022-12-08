@@ -72,7 +72,7 @@ const Signup = () => {
       const user = {
         email: result.user.email
       }
-      axios(`http://localhost:8000/user/${result?.user.email}`,{
+      axios(`https://server-nine-mocha.vercel.app/user/${result?.user.email}`,{
         method: "POST",
         data: user,
         headers: {

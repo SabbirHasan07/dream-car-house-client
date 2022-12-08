@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         path: '/allproducts/:id',
         element: <Details />,
         loader:({params})=>{
-          fetch(`http://localhost:8000/allproducts/${params.id}`)
+          fetch(`https://server-nine-mocha.vercel.app/allproducts/${params.id}`)
         }
       },
       {

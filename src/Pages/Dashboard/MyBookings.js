@@ -22,14 +22,14 @@ const MyBookings = () => {
   const { data: bookings = [] } = useQuery({
     queryKey: ['bookings',email],
     queryFn: async () => {
-        const res = await fetch(`http://localhost:8000/bookings/${email}`);
+        const res = await fetch(`https://server-nine-mocha.vercel.app/bookings/${email}`);
         const data = await res.json();
         return data
     }
 });
 
   // useEffect(() => {
-  //   fetch(`http://localhost:8000/bookings/${email}`)
+  //   fetch(`https://server-nine-mocha.vercel.app/bookings/${email}`)
   //     .then(res => res.json())
   //     .then(data => setBookings(data));
   // }, [email]);

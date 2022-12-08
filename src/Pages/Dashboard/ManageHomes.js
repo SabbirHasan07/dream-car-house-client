@@ -10,7 +10,7 @@ const ManageHomes = ({role}) => {
     const {email} = useParams();
     console.log(email)
     useEffect(()=>{
-        fetch(`http://localhost:8000/manage/${email}`)
+        fetch(`https://server-nine-mocha.vercel.app/manage/${email}`)
         .then(res=>res.json())
         .then(data => setBooking(data))
     },[email])

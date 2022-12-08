@@ -1,5 +1,5 @@
 export const hostRequest = async hostData => {
-  const url = `${process.env.REACT_APP_API_URL}/user/${hostData?.email}`
+  const url = `https://server-nine-mocha.vercel.app/user/${hostData?.email}`
 
   const response = await fetch(url, {
     method: 'PUT',
@@ -16,7 +16,7 @@ export const hostRequest = async hostData => {
 
 // Get user role
 export const getRole = async email => {
-  const url = `${process.env.REACT_APP_API_URL}/user/${email}`
+  const url = `https://server-nine-mocha.vercel.app/user/${email}`
 
   const response = await fetch(url)
 
@@ -27,7 +27,7 @@ export const getRole = async email => {
 
 // Get All Users
 export const getAllUsers = async () => {
-  const response = await fetch(`${process.env.REACT_APP_API_URL}/users`)
+  const response = await fetch(`https://server-nine-mocha.vercel.app/users`)
 
   const users = await response.json()
 
@@ -37,7 +37,7 @@ export const getAllUsers = async () => {
 export const makeHost = async user => {
   delete user._id
   const response = await fetch(
-    `${process.env.REACT_APP_API_URL}/user/${user?.email}`,
+    `https://server-nine-mocha.vercel.app/user/${user?.email}`,
     {
       method: 'PUT',
       headers: {

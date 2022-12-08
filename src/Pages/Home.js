@@ -25,7 +25,7 @@ const Home = () => {
 
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/cetagories`)
+    fetch(`https://server-nine-mocha.vercel.app/cetagories`)
       .then(res => res.json())
       .then(data => {
 

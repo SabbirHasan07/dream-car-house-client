@@ -1,5 +1,5 @@
 export const addHome = async homeData => {
-  const url = `${process.env.REACT_APP_API_URL}/allproducts`
+  const url = `https://server-nine-mocha.vercel.app/allproducts`
 
   const response = await fetch(url, {
     method: 'POST',
